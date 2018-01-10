@@ -1,0 +1,62 @@
+<?php
+session_start();
+error_reporting(0);
+include "../module/produk.php";
+$db=new produk();
+$aksi=$_GET["aksi"];
+
+if($aksi=='saveproduk'){
+	$db->saveproduk($_POST['pro_name'],$_POST['proid'],$_POST['ctrg_id'],$_POST['pro_image'],$_POST['pro_saleprice'],$_POST['pro_description']);
+}
+if($aksi=='uploadproduct'){
+	$db->uploadproduct();
+}
+if($aksi=='getdata'){
+	$db->load_more($_POST['idakhir'],$_POST['idlapak']);
+}
+if($aksi=='getdatabarang'){
+	$db->load_morebarang($_POST['idakhir'],$_POST['idlapak']);
+}
+if($aksi=='getdatakat'){
+	$db->load_morekategori($_POST['idakhir'],$_POST['idkategori']);
+}
+if($aksi=='getcari'){
+	$db->load_cari($_POST['idakhir'],$_POST['idcari']);
+}
+if($aksi=='cart'){
+	$db->cart($_POST['idproduk'],$_POST['quantity']);
+}
+if($aksi=='cartdel'){
+	$db->cartdel($_POST['id']);
+}
+if($aksi=='cartupdate'){
+	$db->cartupdate($_POST['id'],$_POST['quantity']);
+}
+if($aksi=='listcart'){
+	$db->listcart();
+}
+if($aksi=='pesan'){
+	$db->newpesan($_POST['idproduk']);
+}
+if($aksi=='kategori'){
+	$db->kategori();
+}
+if($aksi=='listproduk'){
+	$db->listproduk();
+}
+if($aksi=='terima'){
+	$db->ubahstatus($_GET['aksi'],$_GET['idp']);
+}
+if($aksi=='blokir'){
+	$db->ubahstatus($_GET['aksi'],$_GET['idp']);
+}
+if($aksi=='dijual'){
+	$db->ubahstatus($_GET['aksi'],$_GET['idp']);
+}
+if($aksi=='tidak'){
+	$db->ubahstatus($_GET['aksi'],$_GET['idp']);
+}
+if($aksi=='delete'){
+	$db->ubahstatus($_GET['aksi'],$_GET['idp']);
+}
+?>	

@@ -1,0 +1,1021 @@
+
+/* VERSI KOMPUTER / DESKTOP / NOTEBOOK / LAPTOP */
+/* Css dimulai */
+
+html
+	{
+		height: 100%;
+		overflow-x: hidden;
+	}
+
+body
+	{
+		min-height: 100%;
+		font-family: 'muli';
+	}
+
+a
+	{
+		text-decoration: none;
+		color: #03A9F4;
+	}
+
+a:hover
+	{
+		text-decoration: none;
+	}
+
+li
+	{
+		list-style: none;
+        cursor: pointer;
+	}
+ul
+    {
+        padding: 0px;
+    }
+i 
+    {
+        
+        padding-right: 4px;
+    }
+
+input[type="file"]
+    {
+        display: block;
+        background: #ddd;
+        width: 92px;
+    }
+
+#hidden {display:none}
+#progress-bar {position:fixed;z-index:9999;top:0;left:0;width:0;height:2px;background-color:#2B838D}
+/** panel header **/
+
+#panel-header
+{
+	width: 100%;
+    padding: 5px;
+    font-size: 25px;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #ddd;
+    position: fixed;
+    top: -2px;
+    z-index: 9999;
+}
+
+#panel-header
+.panel-nav-button
+{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+    padding-right: 10px;
+    background: #2B838D;
+    color: #fff;
+}
+
+#panel-header
+.panel-title
+{
+	display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    padding-top: 5px;
+    font-family: 'muli';
+    font-weight: bold;
+    color: #2B838D;
+}
+.avatar {
+    width: 30px;
+    margin: -10px 3px;
+    border-radius: 50%;
+    border: 2px solid #2B838D;
+}
+.panel-name-staff{
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-right: 38px;
+    font-family: muli;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 7px;
+    color: #4CAF50;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    background-color: transparent;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+td, th {
+    padding: 0;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.table-fixed {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+}
+
+
+
+#menu-bar
+{
+	display: block;
+	position: fixed;
+    height: 100%;
+    width: 0%;
+    background: #2B838D;
+    transition: 0.4s;
+    color: #fff;
+    overflow-x: hidden;
+    margin-top: 0;
+}
+
+#menu-bar
+.menu-bar-close
+{
+    text-align: center;
+    font-size: 22px;
+    background: #3a3b3c;
+    display: inline-block;
+    width: 50%;
+    padding-top: 4px;
+}
+
+#menu-bar
+.menu-bar-close:hover
+{
+background: #0b0613b3;
+    transition: 0.3s;
+}
+
+
+.menu-list
+{
+	text-align: center;
+    margin-bottom: 66px;
+    z-index: 9999;
+}
+
+.menu-list
+ul
+{
+	padding: 0;
+}
+
+.menu-list
+ul a:hover
+{
+	text-decoration: none;
+}
+
+.menu-list
+li
+{
+    background: #2B838D;
+    padding: 3px;
+    font-weight: bold;
+    font-family: 'muli';
+    transition: 0.2s;
+    border-bottom: 2px solid#fff;
+    font-size: 13px;
+    color: #fff;
+}
+
+.menu-list
+li i
+{
+    display: block;
+    font-size: 32px;
+
+}
+
+.menu-list
+li:hover
+{
+	background: #236870;
+}
+
+.logout
+{
+	float: right;
+    width: 50%;
+    background: #3a3b3c;
+    font-family: 'muli';
+    font-weight: bold;
+    padding: 5.5px;
+    vertical-align: top;
+    border-left: 2px solid#fff;
+    text-align: center;
+        padding-top: 9.4px;
+}
+
+.logout:hover
+{
+    background: #0b0613b3;
+    transition: 0.3s;
+}
+
+
+/** panel content **/
+
+#panel-content
+{
+    width: 97%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 8px;
+    transition: 0.3s;
+    margin-left: 1%;
+    margin-top: 50px;
+}
+
+#panel-content
+.info-stock
+{
+    width: 32.53%;
+    height: 133px;
+    background: #4CAF50;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'muli';
+    text-align: center;
+    padding: 4px;
+}
+
+#panel-content
+.info-stock
+.info-value
+{
+    margin-top: 10px;
+    font-size: 50px;
+    margin: auto;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#panel-content
+.info-stock
+.info-value
+i
+{
+	margin-right: 8px;
+}
+
+#panel-content
+.info-stock:nth-child(2)
+{
+	background: #2B838D;
+}
+
+#panel-content
+.info-stock:nth-child(3)
+{
+	background: #673AB7;
+}
+
+/** af produk **/
+#panel-content
+{
+    overflow-x: hidden;
+    font-family: 'muli';
+}
+
+#panel-content
+.produk-nav
+ul
+{
+    padding: 0;
+}
+
+#panel-content
+.produk-nav
+a:hover
+{
+    text-decoration: none;
+}
+
+#panel-content
+.produk-nav
+li
+{
+    display: inline-block;
+    vertical-align: top;
+   
+}
+
+#panel-content
+.produk-nav
+a:hover
+{
+    background: #673AB7;
+    box-shadow: none;
+    color: #fff;
+}
+.produk-nav
+a
+{
+    background: #2B838D;
+    color: #fff;
+    font-family: 'muli';
+    font-weight: 600;
+    padding: 5px;
+    box-shadow: 1px 1px 1px 1px #e8e8e8;
+    margin-top: 5px;
+    transition: 0.3s;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+}
+
+#panel-content
+.produk-content
+{
+    overflow-x: hidden;
+}
+
+#panel-content
+.produk-content
+.produk-content-title
+{
+    font-family: 'muli';
+    background: #3F51B5;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+}
+#panel-content
+.produk-content
+.produk-content-title
+i
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#panel-content
+.product-content-isi
+{
+    margin:auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#panel-content
+.menu-nav
+li
+{
+    display: inline-block;
+    padding: 5px;
+    font-family: 'muli';
+    background: #3f51b5;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 1%;
+    transition: 0.3s;
+}
+.panel-default {
+    border-color: #ddd;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    border-radius: 4px;
+    border-color: #ddd;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.panel-body {
+    padding: 15px;
+}
+
+
+#panel-content
+.menu-nav
+li:hover
+{
+    background: #673AB7;
+}
+
+#panel-content
+.produk-info-desc-hold
+{
+    padding: 10px;
+}
+
+.produk-desc
+.pc
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1%;
+}
+
+/* dashboard */
+
+    .last-member
+    {
+    margin-top: 6px;
+    height: 69px;
+    width: 80px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    border-radius: 3px;
+    margin-left: 3.7px;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #ebebeb;
+    }
+
+    .member-name
+    {
+     position: absolute;
+    vertical-align: top;
+    font-size: 11px;
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+    bottom: 30px;
+    display:block;
+    }
+
+    .member-hover
+    {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    bottom: 0;
+    color: transparent;
+    }
+
+    .member-hover:hover
+    {
+        background: rgba(38, 36, 36, 0.51);
+        cursor: pointer;
+        color: #fff;
+    }
+    .member-hover:hover + .member-name
+    {
+        display: inline-block;
+    }
+
+
+.info-site
+{
+    width: 99%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.info-site .info-f
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 32.8%;
+    margin: auto;
+    border: 1px solid#ddd;
+    padding: 3px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.info-site .info-f .info-title
+{
+    padding: 4px;
+    font-family: muli;
+    color: #e91e63;
+    text-align: center;
+    border-bottom: 1px solid#ddd;
+    font-weight: bold;
+}
+
+/** KAtegori **/
+.produk-kategori-input
+input
+{
+    width: 100%;
+    padding: 4px;
+}
+.produk-kategori-input
+.merk-save
+{
+    width: 10%;
+    margin-top: 1.2%;
+}
+.produk-kategori-show
+.produk-kat-show-title
+{
+    margin-top: 12px;
+    background: #3f51b5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.show-merk
+{
+    width: 19%;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 1px 2px #ddd;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    position: relative;
+}
+
+.show-merk-title
+{
+    background: rgba(12, 12, 12, 0.4);
+    padding: 3px;
+    color: #fff;
+    font-family: 'bungee';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*********************************************************
+MENGUPLOAD IMAGE CSS
+**********************************************************/
+
+.afuploader-form
+{
+    margin: auto;
+    position: relative;
+    width: 90%;
+    margin-top: 2%;
+}
+.upload-image
+{
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    overflow: hidden;
+    background: rgba(25, 25, 25, 0.83);
+    margin:auto;
+    z-index: 9999;
+    display: none;
+}
+.afuploader-cont-form
+{
+     margin: auto;
+    width: 100%;
+    background: #ffffff;
+    height: 58vh;
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 14px #9c9c9c;
+    margin-top: 5px;   
+}
+
+.afuploader-title
+{
+    padding-top: 3%;
+    text-align: center;
+    font-family: 'bungee';
+    background: #464646;
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+.afuploader-holder-ipt
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 4%;
+    font-family: 'muli';
+}
+
+.afuploader-holder-ipt
+input 
+{
+    display: inline-block;
+}
+
+.afuploader-holder-ipt
+input #afupload-filename
+{
+    display: inline-block;
+    padding: 3px;
+    border-style: none;
+}
+.tombol{
+    border-radius: 4px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    padding: 5px;
+}
+
+
+#btn-submit-upload
+{
+    margin-left: 45%;
+    margin-top: 8px;
+    font-family: 'muli';
+    font-weight: bold;
+}
+
+.afuploader-images-holder
+{
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+}
+
+.afuploader-images-holder
+.afuploader-images-left
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 72%;
+    background: #2B838D;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 14px;
+}
+
+.afimg-sel
+{
+    width: 23%;
+    height: 98px;
+    background: #3d6875;
+    margin-top: 8px;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid#ffffff;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 3px #464646;
+    transition: 0.3s;
+}
+
+.afimg-sel:hover
+{
+    border: 7px solid#9C27B0;
+    box-shadow: none;
+}
+
+.afuploader-images-right
+{
+    display: none;
+    vertical-align: top;
+    width: 27%;
+    padding: 5px;
+    text-align: center;
+}
+
+#afuploader-nm
+{
+    margin-top: 20px;
+    width: 100%;
+    background: #464646;
+    border-style: none;
+    font-family: 'muli';
+    color: #fff;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+#afuploader-images-res-holder
+{
+    width: 100%;
+    height: 132px;
+    overflow: hidden;
+    border: 3px solid#E91E63;
+    padding: 3px;
+    background: #464646;
+}
+
+.afuploader-images-right
+h5
+{
+    text-align: center;
+    background: #464646;
+    padding: 3px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'muli';
+    border-radius: 4px;
+}
+
+.m-logo-show
+{
+    width: 18%;
+    background: transparent;
+    margin-bottom: 5px;
+}
+
+#ipt-m-url
+{
+    font-family: 'muli';
+    font-weight: bold;
+    margin-top: 8px;
+    border-style: none;
+    background: #3f51b5;
+    color: #fff;
+}
+/*********************************************************
+MENGUPLOAD IMAGE CSS
+**********************************************************/
+
+/** CONTENT DISPLAY NONE **/
+#panel-header
+.panel-nav-button-mobile
+{
+	display: none;
+}
+
+#menu-bar-mobile
+{
+	display: none;
+}
+
+.produk-content-isi
+p
+{
+    display: inline-block;
+    margin-left: 1.2%;
+    margin-top: 1%;
+}
+
+#panel-content
+.produk-code
+{
+    float: right;
+    vertical-align: top;
+    width: 40%;
+    padding: 0;
+    margin-top: -2.3%;
+}
+#panel-content
+.produk-code
+h5
+{
+    margin: 0;
+    padding-left: 1%;
+}
+
+#panel-content
+.produk-code
+input
+{
+    border-style: none;
+    background: #3f51b5;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#panel-content
+#label
+{
+    border-style: none;
+    background: #3f51b5;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#panel-content
+#labelb
+{
+    border-style: none;
+    background: #3f51b5;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#panel-content
+#labelc
+{
+    border-style: none;
+    background: #3f51b5;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+/* Css berakhir */
+
+/**********************************************************************************************************************
+	BATAS VERSI DISPLAY
+***********************************************************************************************************************/
+
+/* VERSI HP | ANDROID | APPLE | IPAD | XIAOMI | NOKIA */
+/* Css dimulai */
+
+@media screen and (max-width: 800px) /* Mobile */ {
+
+/* panel header */
+#panel-header
+.panel-nav-button
+{
+	display: none;
+}
+
+#panel-header
+.panel-nav-button-mobile
+{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+    padding-right: 10px;
+    background: #2B838D;
+    color: #fff;
+}
+
+#menu-bar
+{
+	display: none;
+}
+
+#menu-bar-mobile
+{
+	display: block;
+	position: fixed;
+    height: 100%;
+    width: 0%;
+    background: #2B838D;
+    color: #fff;
+    transition: 0.3s;
+    overflow-x: hidden;
+    z-index: 9999;
+    top: -2px;
+}
+
+#menu-bar-mobile
+.menu-bar-close-mobile
+{
+	text-align: center;
+    font-size: 22px;
+    background: #3a3b3c;
+    display: inline-block;
+    width: 50%;
+    height: 37px;
+}
+
+/* panel content */
+
+#panel-content
+.info-stock
+{
+	width: 99%;
+    height: 133px;
+    background: #4CAF50;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* af produk */
+#panel-content
+.produk-nav
+li
+{
+    display: block;
+}
+
+.produk-content-isi
+#code
+{
+    width: 100%;
+    display: block;
+    border-style: none;
+    border: 2px solid#3f51b5;
+    padding: 2px;
+    border-radius: 3px;
+    background: #3f51b5;
+    color: #fff;
+}
+
+.produk-content-isi
+#fcode
+{
+    width: 100%;
+    border-style: none;
+    border: 2px solid#3f51b5;
+    padding: 2px;
+    border-radius: 3px;
+    background: #3f51b5;
+    color: #fff;
+
+}
+
+.produk-content-isi
+#label
+{
+    border-style: none;
+    border: 2px solid#3f51b5;
+    padding: 2px;
+    border-radius: 3px;
+    background: #3f51b5;
+    color: #fff;
+}
+#labelb
+{
+    border-style: none;
+    border: 2px solid#3f51b5;
+    padding: 2px;
+    border-radius: 3px;
+    background: #3f51b5;
+    color: #fff;
+}
+
+.produk-content-isi
+p
+{
+    display: block;
+    margin-left: 0;
+    margin-bottom: 1%;
+}
+
+#panel-content
+.produk-code
+{
+    display: block;
+    float:none;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+}
+#panel-content
+.produk-code
+h5
+{
+    display: none;
+}
+
+
+
+/*********************************************************
+MENGUPLOAD IMAGE CSS
+**********************************************************/
+
+.upload-image
+{
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    overflow: hidden;
+    background: rgba(25, 25, 25, 0.83);
+    margin-top: -12.4%;
+    display: none;
+}
+
+
+/*********************************************************
+MENGUPLOAD IMAGE CSS
+**********************************************************/
+/* END MEDIA SCREEN UNTUK ANDROID | APPLE | IPAD | XIAOMI |NOKIA */
+}
+
+
+
+/* Css berakhir */

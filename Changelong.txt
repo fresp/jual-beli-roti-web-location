@@ -1,0 +1,172 @@
+V.0.1 Update 9.05.17
++Add Pesan Diluar jangkuan jika lokasi pembeli dan penjual diluar batas 5km
+
+V.0.2 Update 11.05.17
++Add Page Produk
+
+V.0.2 Update 12.05.17
++Fixed Bugs Jika Lokasi kosong
++Add Detail Produk
+
+V.0.3 Update 14.05.17
++Add Name Penjual di Page Produk
++Add Page Cari
+
+V.0.4 Update 15.05.17
++Perbaikan query untuk mencari banyak keyword
++Form Cari Solved
+
+V.0.5 Update 19.05.17
++Add Hamburger kanan untuk cart
++add Layout List dan Module List Cart
+
+V.0.6 Update 23.05.17
++FIXED QUERY Update Delete Cart
+
+V.0.7 Update 25.05.17
++Add Fungsi Jquery OnChange update cart
++FIXED QUERY SUBTOTAL cart
+
+V.0.9 Update 28.05.17
++FIXED SESSION LAT, LONG, NERBIE
++ADD JARAK maksimal pada list cart
+
+V.0.10 Update 30.05.17
++ADD fungsi bayar semua 
++Add fungsi bayar selected
++Fix jquery div
++Add page orderconfirm
+
+V.0.11 Update 05.06.17
++FIXED Lokasi dikeranjang
+
+V.0.12 Update 14.06.17
++Fixed orderconfirm
++add Page Finish
++Fixed alert beli produk
++Fixed minor bugs
+
+V.0.13 Update 16.06.17
++FIxed font icon
++fixed style header/footer
++add page list produk
++add page edit produk
+
+V.0.14 Update 17.06.17
++Delete pesan
++add deskripsi di produk
++add page kategori
+
+V.0.15 Update 18.06.17
++Fixed script
++Add page edit lapak
++Add cron delete semua gambarpenjual yg ga kesimpan di database
++Add cron delete semua gambarproduk yg ga kesimpan di database
++fix Src image produk
+
+V.0.16 Update 19.06.17
++Fixed validasi member
++FIxed query login
++Fixed update nerbie,lat,long
++Fixed Layout Sidebar kiri
++Fixed error url
++Delete field db mem_gender, mem_picture, mem_datebirth
++Fixed status member di produk
+
+V.0.17 Update 20.06.17
++Fixed query loadmore produk member
++Fixed url dan load fungsi.js
+
+V.0.18 Update 22.06.17
++Add Countdown di ganti nomer
++Add Page edit akun
+
+V.0.19 Update 24.06.17
++Del Config Facebook Login
++Add Page Ubah Password	
+
+V.0.20 Update 25.06.17 & 29.06.17
++Add Alert dengan $_SESSION['alert']
++Fixed Bug Fungsi.js
++fixed minor bugs di Layout
++Fixed query Cari, produk lapak, Kategori
+
+V.0.21 Update 27.06.17
++FIxed query jarak
++Add diskon untuk pembayaran selain cod
++Fixed query invoice dan add field inv_note
++change DB dbroit
++Add Page order_detail untuk menampilkan invoice dan order id
++Fixed beberapa statement if untuk status invoice dan order
+
+V.022 Update 3.07.17
++Fixed Layout admin
++add datatables untuk list produk
++add datatables untuk list member
++Fixed Validation login
++add page login admin
+
+
+V.023 Update 4.07.17
++Fixed query list transaksi,orderconfirm,finish
++add page transaksi admin
++add Label freeongkir
++Fixed query di page cari
++fixed query cart
++add page saldo
+
+V.024 Update 6.07.17
++Fixed Minor Bug
+
+V.025 Update 15.07.17
++Remove Gratis Ongkir Produk
++Fixed Query Transaksi
++Fixed Query Saldo transaksi sukses
++Fixed Query Saldo Refund
+
+V.026 Update 17.07.17
++add Module Saldo
++Add Page Reset Password
+
+
+V.027 Update 18.07.17
++add Fungsi Class alpha untuk input hanya huruf
++Relayout Add Product
++Recoding Module add Produk
++Fixed url detailproduk
++Fixed Query Listcart
+
+V.028 Update 21.07.17
++Fixed Helper Isset Payment
++Add field order_date di table orders
++Add order_date function konfid
++Add Fungsi Nonaktif&aktif member admin
++Add Page Admin
++add Page ubah Data admin
++Add Function ubah data admin dan member
+
+V.029 Update 1.08.17
++Add Page Tambah Admin
+
+V.030 Update 6.08.17
++Delate field Pro_discontprice
++delete field pro_freeongkir
++add Fungsi active hours di page penjual
++add Fungsi active hours di page produk
++Fixed Query edit produk
++Fixed Query aksi produk admin
++Fixed Query list produk member
++Add Fungsi delete produk member
++add page help
++add field jam buka di joinseller
+
+V.031 Update 7.08.17
++Fixed Quary Qty di cart
++Fixed Message Api sms di order sukses
++Add Page Withdrawal
++Fixed Query List Saldo
++Fixed Query Refund
++Fixed Query Withdrawal
++Fixed Tombol withdrawal admin
++Add Page Withdrawal Admin
++Add Query proses withdrawal

@@ -1,0 +1,67 @@
+<?php
+session_start();
+include "../module/member.php";
+$db=new member();
+$aksi=$_GET["aksi"];
+
+if($aksi=='checkmail'){
+	$db->cekemail($_POST['email']);
+}
+if($aksi=='checkphone'){
+	$db->checkphone($_POST['phone']);
+}
+if($aksi=='checkotp'){
+	$db->checkotp($_POST['kodeotp']);
+}
+if($aksi=='simpanno'){
+	$db->simpanno();
+}
+if($aksi=='saveinfo'){
+	$db->saveinfo($_POST['memfirst'],$_POST['memlast']);
+}
+if($aksi=='savepassword'){
+	$db->savepassword($_POST['passnew']);
+}
+if($aksi=='requestotp'){
+	$db->requestotp($_POST['phone']);
+}
+if($aksi=='daftar'){
+	$db->registrasi($_POST['first'],$_POST['last'],$_POST['email'],$_POST['phone'],$_POST['pass']);
+}
+if($aksi=='requestkode'){
+	$db->request($_POST['email']);
+}
+if($aksi=='cekreset'){
+	$db->cekreset($_POST['email']);
+}
+if($aksi=='resetpassword'){
+	$db->resetpassword($_POST['email']);
+}
+if($aksi=='aktivasi'){
+	$db->aktivasi($_POST['kodeotp'],$_POST['email']);
+}
+if($aksi=='login'){
+	$db->login($_POST['email'],$_POST['pass']);
+}
+if($aksi=='uploadakun'){
+	$db->uploadakun();
+}
+if($aksi=='checklogin'){
+	$db->checklogin($_POST['email']);
+}
+if($aksi=='checkpassword'){
+	$db->checkpassword($_POST['pass']);
+}
+if($aksi=='logout'){
+	$db->logout();
+}
+if($aksi=='aktifkan'){
+	$db->ubahstatus($_GET['aksi'],$_GET['email']);
+}
+if($aksi=='nonaktifkan'){
+	$db->ubahstatus($_GET['aksi'],$_GET['email']);
+}
+if($aksi=='change'){
+	$db->change($_POST['username'],$_POST['pass']);
+}
+?>	

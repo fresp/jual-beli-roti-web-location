@@ -1,0 +1,30 @@
+<?php
+session_start();
+include "../module/admin.php";
+$db=new admin();
+$aksi=$_GET["aksi"];
+if($aksi=='login'){
+	$db->login($_POST['username'],$_POST['pass']);
+}
+if($aksi=='checklogin'){
+	$db->checklogin($_POST['username']);
+}
+if($aksi=='checkpassword'){
+	$db->checkpassword($_POST['pass']);
+}
+if($aksi=='logout'){
+	$db->logout();
+}
+if($aksi=='aktifkan'){
+	$db->ubahstatus($_GET['aksi'],$_GET['user']);
+}
+if($aksi=='nonaktifkan'){
+	$db->ubahstatus($_GET['aksi'],$_GET['user']);
+}
+if($aksi=='change'){
+	$db->change($_POST['username'],$_POST['pass'],$_POST['user']);
+}
+if($aksi=='add'){
+	$db->add($_POST['username'],$_POST['pass']);
+}
+?>	

@@ -1,0 +1,49 @@
+<?php
+session_start();
+include "../module/seller.php";
+$db=new seller();
+$aksi=$_GET["aksi"];
+if($aksi=='joinseller'){
+	$db->joinseller($_POST['user'],$_POST['namatoko'],$_POST['jambuka'],$_POST['jamtutup']);
+}
+if($aksi=='checkuserlapak'){
+	$db->checkuserlapak($_POST['user']);
+}
+if($aksi=='cekseller'){
+	$db->cekseller($_POST['user']);
+}
+if($aksi=='setlokasi'){
+	$db->setlokasi($_POST['lat'],$_POST['lon']);
+}
+if($aksi=='updatelokasi'){
+	$db->sessionlapak($_POST['nerbie'],$_POST['lat'],$_POST['lon']);
+}
+if($aksi=='savelapak'){
+	$db->savelapak($_POST['lpk_image'],$_POST['lpkid'],$_POST['lpkname'],$_POST['jambuka'],$_POST['jamtutup'],$_POST['lpklon'],$_POST['lpklat'],$_POST['lpknerbie']);
+}
+if($aksi=='upload'){
+	$db->uploadfoto();
+}
+if($aksi=='uploadtoko'){
+	$db->uploadtoko();
+}
+if($aksi=='getdata'){
+	$db->load_more($_POST['idakhir']);
+}
+if($aksi=='tampil'){
+	$db->data();
+}
+
+if($aksi=='ulload'){
+	$db->ulload();
+}
+if($aksi=='infolapak'){
+	$db->infolapak();
+}
+if($aksi=='aktifkan'){
+	$db->ubahstatus($_GET['aksi'],$_GET['user']);
+}
+if($aksi=='nonaktifkan'){
+	$db->ubahstatus($_GET['aksi'],$_GET['user']);
+}
+?>	
